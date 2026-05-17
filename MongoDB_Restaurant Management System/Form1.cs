@@ -32,7 +32,7 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnReservations_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Reservations form - coming soon!");
+            new ReservationForm().ShowDialog();
         }
 
         private void btnFeedback_Click(object sender, EventArgs e)
