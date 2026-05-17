@@ -17,7 +17,8 @@ namespace MongoDB_Restaurant_Management_System
 
         private void LoadFeedback()
         {
-            var list = collection.Find(Builders<Feedback>.Filter.Empty).ToList();
+            var filter = Builders<Feedback>.Filter.Eq(f => f.UserId, Session.CurrentUser.UserId);
+            var list = collection.Find(filter).ToList();
             dgvFeedback.DataSource = list;
         }
 

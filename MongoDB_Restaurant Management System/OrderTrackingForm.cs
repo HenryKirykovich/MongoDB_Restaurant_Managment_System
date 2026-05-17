@@ -19,7 +19,8 @@ namespace MongoDB_Restaurant_Management_System
 
         private void LoadOrders()
         {
-            var orders = collection.Find(Builders<Order>.Filter.Empty).ToList();
+            var filter = Builders<Order>.Filter.Eq(o => o.UserId, Session.CurrentUser.UserId);
+            var orders = collection.Find(filter).ToList();
             dgvOrders.DataSource = orders;
         }
 

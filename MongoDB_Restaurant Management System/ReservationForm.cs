@@ -17,7 +17,8 @@ namespace MongoDB_Restaurant_Management_System
 
         private void LoadReservations()
         {
-            var list = collection.Find(Builders<Reservation>.Filter.Empty).ToList();
+            var filter = Builders<Reservation>.Filter.Eq(r => r.UserId, Session.CurrentUser.UserId);
+            var list = collection.Find(filter).ToList();
             dgvReservations.DataSource = list;
         }
 
