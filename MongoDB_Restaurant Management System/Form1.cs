@@ -37,12 +37,12 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnFeedback_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Feedback form - coming soon!");
+            new FeedbackForm().ShowDialog();
         }
 
         private void btnOrderTracking_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Order Tracking form - coming soon!");
+            new OrderTrackingForm().ShowDialog();
         }
     }
 }
