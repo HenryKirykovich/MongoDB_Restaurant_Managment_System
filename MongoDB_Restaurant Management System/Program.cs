@@ -17,6 +17,7 @@ namespace MongoDB_Restaurant_Management_System
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             MongoDBHelper.InitializeDatabase();
+            DataSeeder.SeedAll();
             Application.Run(new Form1());
         }
     }

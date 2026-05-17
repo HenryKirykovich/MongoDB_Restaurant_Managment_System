@@ -23,16 +23,18 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnReserve_Click(object sender, EventArgs e)
         {
+            string userId = Session.IsLoggedIn ? Session.CurrentUser.UserId : "guest";
+
             var reservation = new Reservation
             {
-                UserId = txtUserId.Text.Trim(),
+                UserId = userId,
                 TableNumber = (int)nudTable.Value,
                 ReservationDate = dtpDate.Value,
                 NumberOfPeople = (int)nudPeople.Value
             };
 
             collection.InsertOne(reservation);
-            MessageBox.Show($"Table {reservation.TableNumber} reserved for {reservation.NumberOfPeople} people!\nID: {reservation.ReservationId}");
+            MessageBox.Show($"Table {reservation.TableNumber} reserved for {reservation.NumberOfPeople} people!");
             LoadReservations();
             ClearFields();
         }
@@ -48,7 +50,6 @@ namespace MongoDB_Restaurant_Management_System
 
         private void ClearFields()
         {
-            txtUserId.Text = "";
             nudTable.Value = 1;
             nudPeople.Value = 1;
             dtpDate.Value = DateTime.Now;

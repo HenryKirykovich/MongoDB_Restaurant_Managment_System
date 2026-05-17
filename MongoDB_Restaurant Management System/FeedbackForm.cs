@@ -23,9 +23,11 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            string userId = Session.IsLoggedIn ? Session.CurrentUser.UserId : "guest";
+
             var feedback = new Feedback
             {
-                UserId = txtUserId.Text.Trim(),
+                UserId = userId,
                 OrderId = txtOrderId.Text.Trim(),
                 Rating = (int)nudRating.Value,
                 Comment = txtComment.Text.Trim()
@@ -39,7 +41,6 @@ namespace MongoDB_Restaurant_Management_System
 
         private void ClearFields()
         {
-            txtUserId.Text = "";
             txtOrderId.Text = "";
             nudRating.Value = 5;
             txtComment.Text = "";

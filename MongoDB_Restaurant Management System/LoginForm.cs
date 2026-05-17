@@ -22,6 +22,7 @@ namespace MongoDB_Restaurant_Management_System
 
             if (user != null)
             {
+                Session.CurrentUser = user;
                 MessageBox.Show($"Welcome, {user.Username}! Role: {user.Role}", "Login Successful");
                 this.Close();
             }

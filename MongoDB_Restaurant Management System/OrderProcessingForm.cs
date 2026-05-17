@@ -56,11 +56,12 @@ namespace MongoDB_Restaurant_Management_System
                 return;
             }
 
+            string userId = Session.IsLoggedIn ? Session.CurrentUser.UserId : "guest";
             var items = (List<ItemOrder>)lstOrder.Tag;
 
             var order = new Order
             {
-                UserId = txtUserId.Text.Trim(),
+                UserId = userId,
                 Items = items,
                 OrderDate = DateTime.Now,
                 Status = "Placed"
@@ -71,7 +72,6 @@ namespace MongoDB_Restaurant_Management_System
 
             lstOrder.Items.Clear();
             lstOrder.Tag = null;
-            txtUserId.Text = "";
         }
 
         private void btnClear_Click(object sender, EventArgs e)
