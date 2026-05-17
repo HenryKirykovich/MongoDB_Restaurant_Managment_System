@@ -20,6 +20,8 @@ namespace MongoDB_Restaurant_Management_System
             this.btnAdvanceStatus = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.lblHint = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.autoTimer = new System.Windows.Forms.Timer();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.SuspendLayout();
             // lblTitle
@@ -30,8 +32,8 @@ namespace MongoDB_Restaurant_Management_System
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // lblHint
             this.lblHint.Location = new System.Drawing.Point(12, 48);
-            this.lblHint.Size = new System.Drawing.Size(500, 20);
-            this.lblHint.Text = "Select an order and click Advance Status to move: Placed → In Kitchen → Ready to Serve → Served";
+            this.lblHint.Size = new System.Drawing.Size(660, 20);
+            this.lblHint.Text = "Auto-updating every 8 seconds: Placed → In Kitchen → Ready to Serve → Served";
             // dgvOrders
             this.dgvOrders.AllowUserToAddRows = false;
             this.dgvOrders.AllowUserToDeleteRows = false;
@@ -50,15 +52,24 @@ namespace MongoDB_Restaurant_Management_System
             this.btnRefresh.Size = new System.Drawing.Size(100, 35);
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // lblStatus
+            this.lblStatus.Location = new System.Drawing.Point(12, 455);
+            this.lblStatus.Size = new System.Drawing.Size(500, 20);
+            this.lblStatus.ForeColor = System.Drawing.Color.Green;
+            this.lblStatus.Text = "Waiting for first auto-update...";
+            // autoTimer
+            this.autoTimer.Interval = 8000;
+            this.autoTimer.Tick += new System.EventHandler(this.autoTimer_Tick);
             // OrderTrackingForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.ClientSize = new System.Drawing.Size(684, 490);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblHint);
             this.Controls.Add(this.dgvOrders);
             this.Controls.Add(this.btnAdvanceStatus);
             this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.lblStatus);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Order Tracking";
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
@@ -69,8 +80,10 @@ namespace MongoDB_Restaurant_Management_System
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblHint;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.DataGridView dgvOrders;
         private System.Windows.Forms.Button btnAdvanceStatus;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Timer autoTimer;
     }
 }
