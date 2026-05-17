@@ -88,6 +88,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuManagementForm.Designer.cs">
+      <DependentUpon>MenuManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>

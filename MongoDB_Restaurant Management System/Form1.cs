@@ -22,7 +22,7 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnMenuManagement_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Menu Management form - coming soon!");
+            new MenuManagementForm().ShowDialog();
         }
 
         private void btnOrderProcessing_Click(object sender, EventArgs e)
