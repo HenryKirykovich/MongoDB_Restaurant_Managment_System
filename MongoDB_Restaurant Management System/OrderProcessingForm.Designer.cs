@@ -19,11 +19,9 @@ namespace MongoDB_Restaurant_Management_System
             this.lblMenu = new System.Windows.Forms.Label();
             this.lblOrder = new System.Windows.Forms.Label();
             this.lblQty = new System.Windows.Forms.Label();
-            this.lblUserId = new System.Windows.Forms.Label();
             this.dgvMenu = new System.Windows.Forms.DataGridView();
             this.lstOrder = new System.Windows.Forms.ListBox();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
-            this.txtUserId = new System.Windows.Forms.TextBox();
             this.btnAddToOrder = new System.Windows.Forms.Button();
             this.btnPlaceOrder = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -72,13 +70,6 @@ namespace MongoDB_Restaurant_Management_System
             // lstOrder
             this.lstOrder.Location = new System.Drawing.Point(430, 73);
             this.lstOrder.Size = new System.Drawing.Size(240, 220);
-            // lblUserId
-            this.lblUserId.Location = new System.Drawing.Point(430, 305);
-            this.lblUserId.Size = new System.Drawing.Size(60, 23);
-            this.lblUserId.Text = "User ID:";
-            // txtUserId
-            this.txtUserId.Location = new System.Drawing.Point(495, 305);
-            this.txtUserId.Size = new System.Drawing.Size(175, 23);
             // btnPlaceOrder
             this.btnPlaceOrder.Location = new System.Drawing.Point(430, 345);
             this.btnPlaceOrder.Size = new System.Drawing.Size(120, 30);
@@ -101,8 +92,6 @@ namespace MongoDB_Restaurant_Management_System
             this.Controls.Add(this.btnAddToOrder);
             this.Controls.Add(this.lblOrder);
             this.Controls.Add(this.lstOrder);
-            this.Controls.Add(this.lblUserId);
-            this.Controls.Add(this.txtUserId);
             this.Controls.Add(this.btnPlaceOrder);
             this.Controls.Add(this.btnClear);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -118,11 +107,9 @@ namespace MongoDB_Restaurant_Management_System
         private System.Windows.Forms.Label lblMenu;
         private System.Windows.Forms.Label lblOrder;
         private System.Windows.Forms.Label lblQty;
-        private System.Windows.Forms.Label lblUserId;
         private System.Windows.Forms.DataGridView dgvMenu;
         private System.Windows.Forms.ListBox lstOrder;
         private System.Windows.Forms.NumericUpDown nudQuantity;
-        private System.Windows.Forms.TextBox txtUserId;
         private System.Windows.Forms.Button btnAddToOrder;
         private System.Windows.Forms.Button btnPlaceOrder;
         private System.Windows.Forms.Button btnClear;
