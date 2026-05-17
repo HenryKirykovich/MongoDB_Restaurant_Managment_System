@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "6a0a285df33c492478e05cbd"
+  },
+  "UserId": "test_user_01",
+  "OrderId": "order_01",
+  "Rating": 5,
+  "Comment": "Excellent food and service!"
+},
+{
+  "_id": {
+    "$oid": "6a0a285df33c492478e05cbe"
+  },
+  "UserId": "test_user_02",
+  "OrderId": "order_02",
+  "Rating": 4,
+  "Comment": "Burger was great, a bit slow"
+},
+{
+  "_id": {
+    "$oid": "6a0a285df33c492478e05cbf"
+  },
+  "UserId": "test_user_03",
+  "OrderId": "order_03",
+  "Rating": 3,
+  "Comment": "Average experience overall"
+},
+{
+  "_id": {
+    "$oid": "6a0a28e48e06dd557772be43"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "OrderId": "order_01",
+  "Rating": 5,
+  "Comment": "Excellent food!"
+},
+{
+  "_id": {
+    "$oid": "6a0a28e48e06dd557772be44"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "OrderId": "order_02",
+  "Rating": 4,
+  "Comment": "Great burger, a bit slow"
+}]

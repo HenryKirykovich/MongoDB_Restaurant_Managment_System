@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "6a0a2856f33c492478e05cba"
+  },
+  "UserId": "test_user_01",
+  "TableNumber": 3,
+  "ReservationDate": {
+    "$date": "2026-05-18T00:00:00.000Z"
+  },
+  "NumberOfPeople": 2
+},
+{
+  "_id": {
+    "$oid": "6a0a2856f33c492478e05cbb"
+  },
+  "UserId": "test_user_02",
+  "TableNumber": 7,
+  "ReservationDate": {
+    "$date": "2026-05-19T00:00:00.000Z"
+  },
+  "NumberOfPeople": 4
+},
+{
+  "_id": {
+    "$oid": "6a0a2856f33c492478e05cbc"
+  },
+  "UserId": "test_user_03",
+  "TableNumber": 12,
+  "ReservationDate": {
+    "$date": "2026-05-20T00:00:00.000Z"
+  },
+  "NumberOfPeople": 6
+},
+{
+  "_id": {
+    "$oid": "6a0a28db8e06dd557772be3f"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "TableNumber": 3,
+  "ReservationDate": {
+    "$date": "2026-05-18T00:00:00.000Z"
+  },
+  "NumberOfPeople": 2
+},
+{
+  "_id": {
+    "$oid": "6a0a28db8e06dd557772be40"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "TableNumber": 7,
+  "ReservationDate": {
+    "$date": "2026-05-19T00:00:00.000Z"
+  },
+  "NumberOfPeople": 4
+},
+{
+  "_id": {
+    "$oid": "6a0a28e18e06dd557772be41"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "TableNumber": 3,
+  "ReservationDate": {
+    "$date": "2026-05-18T00:00:00.000Z"
+  },
+  "NumberOfPeople": 2
+},
+{
+  "_id": {
+    "$oid": "6a0a28e18e06dd557772be42"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "TableNumber": 7,
+  "ReservationDate": {
+    "$date": "2026-05-19T00:00:00.000Z"
+  },
+  "NumberOfPeople": 4
+},
+{
+  "_id": {
+    "$oid": "6a0a36373a78e9159da3d93d"
+  },
+  "UserId": "6a0a258fa776202794c535a8",
+  "TableNumber": 9,
+  "ReservationDate": {
+    "$date": "2026-05-17T21:42:02.572Z"
+  },
+  "NumberOfPeople": 5
+}]

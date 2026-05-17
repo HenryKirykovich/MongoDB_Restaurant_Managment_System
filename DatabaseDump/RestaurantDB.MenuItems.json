@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cac"
+  },
+  "Name": "Caesar Salad",
+  "Description": "Romaine, croutons, parmesan",
+  "Price": 9.99,
+  "Category": "Appetizer"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cad"
+  },
+  "Name": "Tomato Soup",
+  "Description": "Creamy tomato basil soup",
+  "Price": 7.5,
+  "Category": "Appetizer"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cae"
+  },
+  "Name": "Garlic Bread",
+  "Description": "Toasted bread with garlic butter",
+  "Price": 4.99,
+  "Category": "Appetizer"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05caf"
+  },
+  "Name": "Grilled Salmon",
+  "Description": "Atlantic salmon with lemon sauce",
+  "Price": 24.99,
+  "Category": "Main Course"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb0"
+  },
+  "Name": "BBQ Burger",
+  "Description": "Beef patty, cheddar, BBQ sauce",
+  "Price": 16.99,
+  "Category": "Main Course"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb1"
+  },
+  "Name": "Chicken Alfredo",
+  "Description": "Pasta with creamy alfredo sauce",
+  "Price": 18.5,
+  "Category": "Main Course"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb2"
+  },
+  "Name": "Ribeye Steak",
+  "Description": "12oz ribeye, medium rare",
+  "Price": 34.99,
+  "Category": "Main Course"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb3"
+  },
+  "Name": "Chocolate Lava Cake",
+  "Description": "Warm cake with molten center",
+  "Price": 8.99,
+  "Category": "Dessert"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb4"
+  },
+  "Name": "Cheesecake",
+  "Description": "New York style cheesecake",
+  "Price": 7.99,
+  "Category": "Dessert"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb5"
+  },
+  "Name": "Lemonade",
+  "Description": "Fresh squeezed lemonade",
+  "Price": 3.99,
+  "Category": "Drink"
+},
+{
+  "_id": {
+    "$oid": "6a0a2845f33c492478e05cb6"
+  },
+  "Name": "Coffee",
+  "Description": "Freshly brewed house blend",
+  "Price": 2.99,
+  "Category": "Drink"
+}]
