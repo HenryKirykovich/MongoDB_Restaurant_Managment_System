@@ -12,12 +12,12 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Login form - coming soon!");
+            new LoginForm().ShowDialog();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Register form - coming soon!");
+            new RegisterForm().ShowDialog();
         }
 
         private void btnMenuManagement_Click(object sender, EventArgs e)
