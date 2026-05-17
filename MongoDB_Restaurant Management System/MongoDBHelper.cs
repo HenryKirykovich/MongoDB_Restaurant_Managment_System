@@ -23,5 +23,19 @@ namespace MongoDB_Restaurant_Management_System
         {
             return GetDatabase().GetCollection<T>(collectionName);
         }
+
+        // Creates all collections on first run if they don't exist
+        public static void InitializeDatabase()
+        {
+            var db = GetDatabase();
+            var existing = db.ListCollectionNames().ToList();
+
+            string[] collections = { "Users", "MenuItems", "Orders", "Reservations", "Feedback" };
+            foreach (var name in collections)
+            {
+                if (!existing.Contains(name))
+                    db.CreateCollection(name);
+            }
+        }
     }
 }
