@@ -27,7 +27,7 @@ namespace MongoDB_Restaurant_Management_System
 
         private void btnOrderProcessing_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Order Processing form - coming soon!");
+            new OrderProcessingForm().ShowDialog();
         }
 
         private void btnReservations_Click(object sender, EventArgs e)
